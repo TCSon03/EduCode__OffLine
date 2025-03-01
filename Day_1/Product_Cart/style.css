@@ -33,6 +33,9 @@ body {
 .contents {
   margin-bottom: 32px;
 }
+.contents:last-child {
+  margin-bottom: 0;
+}
 .content-title p {
   display: inline-block;
   background-color: #191847;
@@ -50,64 +53,67 @@ body {
 .content-price p:first-child {
   font-size: 18px;
 }
-.content-price p:nth-of-type(2){
-    font-size: 48px;
-    font-weight: 700;
+.content-price p:nth-of-type(2) {
+  font-size: 48px;
+  font-weight: 700;
 }
-.content-price p:last-child{
-    font-size: 14px;
-    opacity: 0.6;
-}
-
-.content-button-add button{
-    width: 100%;
-    padding: 16px;
-    border: none;
-    border-radius: 8px;
-    background-color: #4788E9;
-    color: #fff;
-    font-weight: 700;
-    box-shadow: 0px 6px 0px #1C57EE;
-    transition: all 0.3s ease-in-out;
-}
-.content-button-add button:hover{
-    background-color: #5da8b6;
-    box-shadow: 0px 6px 0px #90c2ca;
+.content-price p:last-child {
+  font-size: 14px;
+  opacity: 0.6;
 }
 
-.content-stock{
-    display: flex;
-    align-items: center;
+.content-button-add button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4788e9;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0px 6px 0px #1c57ee;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.content-button-add button:hover {
+  background-color: #5da8b6;
+  box-shadow: 0px 6px 0px #90c2ca;
 }
 
-.content-stock span{
-    display: block;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: #00D98B;
-    margin-right: 8px;
+.content-stock {
+  display: flex;
+  align-items: center;
+}
+
+.content-stock span {
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #00d98b;
+  margin-right: 8px;
 }
 .content-button {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
 }
-.content-button .content-cart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 2px solid #C9C9DA;
-    border-radius: 8px;
-    padding: 16px;
-    width: 100%;
+.content-button .content-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #c9c9da;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+}
+.content-cart {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
 }
 
-.content-cart i{
-    font-size: 24px;
+.content-cart i {
+  font-size: 32px;
 }
-.content-cart p{
-    font-weight: 600;
-}
-
