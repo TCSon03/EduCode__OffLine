@@ -42,27 +42,27 @@ header ul li a {
   text-decoration: none;
 }
 a {
-    position: relative;
-  }
-  
-  a::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      border-radius: 4px;
-      background-color: #18272F;
-      bottom: -3px;
-      left: 0;
-      transform-origin: right;
-      transform: scaleX(0);
-      transition: transform .3s ease-in-out;
-    }
-  
-  a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
+  position: relative;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #18272f;
+  bottom: -3px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
 header .sign-in {
   border: 1px solid #1f1d2a;
   padding: 10px 20px;
@@ -72,113 +72,113 @@ header .sign-in {
   font-weight: 400;
 }
 
-.banners{
-    display: flex;
-    align-items: center;
-    margin-bottom: 100px;
-    /* border: 1px solid black; */
+.banners {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  /* border: 1px solid black; */
 }
-.banner-left h1{
-    font-size: 55px;
-    font-weight: 600;
-    color: #1f1d2a;
-    margin-bottom: 30px;
+.banner-left h1 {
+  font-size: 55px;
+  font-weight: 600;
+  color: #1f1d2a;
+  margin-bottom: 30px;
 }
-.banner-left p{
-    font-size: 16px;
-    font-weight: 400px;
-    color: #9B948E;
-    margin-bottom: 50px;
+.banner-left p {
+  font-size: 16px;
+  font-weight: 400px;
+  color: #9b948e;
+  margin-bottom: 50px;
 }
-.banner-left button{
-    padding: 20px 16px;
-    border-radius: 6px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #1f1d2a;
-    border: none;
-    background-color: #96C67F;
-    cursor: pointer;
+.banner-left button {
+  padding: 20px 16px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1f1d2a;
+  border: none;
+  background-color: #96c67f;
+  cursor: pointer;
 }
-.banner-right img{
-    width: 100%;
-    border-radius: 50%;
-    position: relative;
+.banner-right {
+  position: relative;
 }
-.banner-right .sub-img{
-    position: absolute;
-    top: 50%;
-    right: 130px;
-    transform: translateY(-50%);
+.banner-right img {
+  width: 100%;
+  border-radius: 50%;
 }
-.banner-right .sub-img2{
-    position: absolute;
-    left: 800px;
-    bottom: 100px;
-    background-color: #fff;
-    width: 180px;
-    border-radius: 20px;
-    padding: 20px;
+.banner-right > .sub-img {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
 }
-.banner-right .sub-img2 h5{
-    font-size: 16px;
+.banner-right .sub-img2 {
+  position: absolute;
+  background-color: #fff;
+  width: 180px;
+  border-radius: 20px;
+  padding: 20px;
+  bottom: 0;
+  left: 80px;
 }
-.banner-right .sub-img2 p{
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #9B948E;
+.banner-right .sub-img2 h5 {
+  font-size: 16px;
 }
-.banner-right .sub-img2 span{
-    color: #FFB988;
-    font-size: 22px;
+.banner-right .sub-img2 p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #9b948e;
+}
+.banner-right .sub-img2 span {
+  color: #ffb988;
+  font-size: 22px;
 }
 
-.trademark{
-    text-align: center;
-    margin-bottom: 100px;
-    
+.trademark {
+  text-align: center;
+  margin-bottom: 100px;
 }
-.trademark h4{
-    font-size: 16px;
-    font-weight: 500;
-    color: #1f1d2a;
-    margin-bottom: 30px;
+.trademark h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1f1d2a;
+  margin-bottom: 30px;
 }
 .trademark .trademark-item {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
 }
-.trademark .trademark-item img{
-    
-    height: 30px;
+.trademark .trademark-item img {
+  height: 30px;
 }
 
-.today{
-    text-align: center;
-    margin-bottom: 70px;
+.today {
+  text-align: center;
+  margin-bottom: 70px;
 }
-.today p{
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 10px;
+.today p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
-.today h2{
-    font-size: 32px;
-    font-weight: 600;
+.today h2 {
+  font-size: 32px;
+  font-weight: 600;
 }
-.today h2 span{
+.today h2 span {
   position: relative;
   z-index: 8;
 }
-.today h2 span::after{
+.today h2 span::after {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   bottom: 8px;
   width: 100%;
   height: 4px;
-  background-color: #96C67F;
+  background-color: #96c67f;
   opacity: 0.8;
 }
 .people {
@@ -187,30 +187,26 @@ header .sign-in {
   align-items: center;
   margin-bottom: 100px;
 }
-.people img{
+.people img {
   width: 295px;
   height: 350px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   /* margin-bottom: 20px; */
 }
-.people-content{
+.people-content {
   background-color: #fff;
   border-radius: 15px;
 }
-.people-content .content-title{
+.people-content .content-title {
   padding: 20px;
 }
-.people-content .content-title h4{
+.people-content .content-title h4 {
   font-size: 20px;
   font-weight: 500;
 }
-.people-content .content-title p{
+.people-content .content-title p {
   font-size: 16px;
   font-weight: 400;
-  color: #9B948E;
+  color: #9b948e;
 }
-
-
-
-

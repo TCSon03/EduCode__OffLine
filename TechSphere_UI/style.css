@@ -1,0 +1,114 @@
+:root {
+  /* font-color */
+  --font-color-black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
+}
+header {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--font-color-black);
+}
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 7px 12px;
+}
+.search input {
+  background-color: #f5f5f5;
+  border: none;
+}
+.search input:focus {
+  outline: none;
+}
+
+.search button {
+  font-size: 1.5rem;
+  border: none;
+  background-color: #f5f5f5;
+}
+.header-right > button {
+  background-color: #fff;
+  font-size: 1.5rem;
+  border: none;
+}
+/* HR */
+hr{
+  /* margin-bottom: 40px; */
+}
+
+/* ======= Banner ======= */
+.banner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid black;
+}
+
+.banner > ul {
+  position: relative;
+  margin-right: 12px;
+  margin-top: 40px;
+}
+
+.banner > ul::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+}
+
+
+.banner .slider-show {
+  border: 1px solid black;
+  grid-column: span 4;
+}
+.banner .slider-show img{
+  width: 100%;
+  max-height: auto;
+  object-fit: contain;
+}
