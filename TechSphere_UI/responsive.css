@@ -1,1 +1,31 @@
-    
+@media screen and (max-width: 1024px) {
+    .container{
+        width: 95%;
+    }
+    nav ul{
+        gap: 1.5rem;
+    }
+    .header-right{
+        gap: 0.5rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    nav{
+        display: none;
+    }
+    .header-right > button:last-child{
+        display: block;
+        position: relative;
+    }
+    .header-right > button:last-child .nav-res{
+        display: none;
+    }
+    .header-right > button:last-child:hover .nav-res{
+        display: block;
+        position: absolute;
+        width: 1000px;
+        background-color: aquamarine;
+        right: 0;
+        top: 0px;
+    }
+}
