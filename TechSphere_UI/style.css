@@ -489,16 +489,16 @@ nav ul li a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 140px;
 }
-.new-arrival .play-station {
+.new-arrival .station-box {
   background-color: #000;
   border-radius: 4px;
   width: 100%;
   padding: 90px 30px 0 30px;
   position: relative;
 }
-.new-arrival .play-station img{
+.new-arrival .play-station img {
   opacity: 0.7;
 }
 .play-station .new-arrival-content {
@@ -506,17 +506,17 @@ nav ul li a {
   position: absolute;
   bottom: 32px;
 }
-.play-station .new-arrival-content h3{
+.play-station .new-arrival-content h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 16px;
 }
-.play-station .new-arrival-content p{
+.play-station .new-arrival-content p {
   font-size: 0.75rem;
   font-weight: 400;
   margin-bottom: 16px;
 }
-.play-station .new-arrival-content button{
+.play-station .new-arrival-content button {
   background: none;
   border: none;
   border-bottom: 1px solid #ccc;
@@ -530,7 +530,21 @@ nav ul li a {
   gap: 30px;
 }
 .grid-left .grid-left-box {
-  background-color: #ffad33;
+  background-color: #000;
+  position: relative;
+  border-radius: 4px;
+}
+.grid-left .grid-left-box > img {
+  border-radius: 4px;
+}
+.grid-left .grid-left-box > .new-arrival-content {
+  position: absolute;
+  left: 32px;
+}
+
+.grid-left .grid-left-box img {
+  float: right;
+  height: 100%;
 }
 .grid-box {
   display: grid;
@@ -538,5 +552,19 @@ nav ul li a {
   gap: 30px;
 }
 .grid-box .grid-box-1 {
-  background-color: #fff;
+  background-color: #000000;
+  padding: 32px 40px;
+  border-radius: 4px;
+  position: relative;
+}
+.grid-box .grid-box-1 .new-arrival-content{
+  position: absolute;
+  left: 24px;
+}
+
+/* Custom */
+
+.custom{
+}
+.custom .custom-box{
 }
