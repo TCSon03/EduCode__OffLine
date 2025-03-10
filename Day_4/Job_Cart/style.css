@@ -1,0 +1,95 @@
+/* font-family: "Merriweather", serif; */
+/* font-family: "Poppins", sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #f3f6ff;
+}
+.group-bottom {
+  margin-bottom: 72px;
+}
+.container {
+  max-width: 1054px;
+  margin: 70px auto;
+}
+.container h2 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+  font-weight: 900;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+main .item {
+  padding: 48px 40px;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 24px 44px 0px rgba(180, 191, 225, 0.4);
+}
+
+.item .item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.item-content img {
+  padding: 16px;
+  background: linear-gradient(132deg, #bbcbfb 5.22%, #f1d4ff 100.41%);
+  border-radius: 14px;
+}
+.item-content > p {
+  font-size: 24px;
+  font-weight: 500;
+}
+.item-button button {
+  width: 100%;
+  padding: 16px 50px;
+  border-radius: 8px;
+  border: 1px solid #c2c5e2;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+.item-button button:hover {
+  background-color: #1e2246;
+  color: #fff;
+}
+
+.backg img {
+  background: linear-gradient(132deg, #fbbbda 5.22%, #ffd4d4 100.41%);
+}
+.backg-1 img {
+  background: linear-gradient(132deg, #bbebfb 5.22%, #efd4ff 100.41%);
+}
+.backg-2 img {
+  background: linear-gradient(132deg, #bbfbe4 5.22%, #d4e0ff 100.41%);
+}
+.backg-3 img {
+  background: linear-gradient(132deg, #bbd8fb 5.22%, #ffd4d4 100.41%);
+}
+.backg-4 img {
+  background: linear-gradient(132deg, #ffdec7 5.22%, #d4d9ff 100.41%);
+}
+.backg-5 img {
+  background: linear-gradient(132deg, #fbbbda 5.22%, #ffd4d4 100.41%);
+}
+
+.container > p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.7;
+  padding: 0 80px;
+}

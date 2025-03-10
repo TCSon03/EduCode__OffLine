@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f1f1f6;
+}
+.container {
+  max-width: 1308px;
+  margin: 50px auto;
+  border-radius: 23px;
+  padding: 80px 150px;
+  background: #f4f5fa;
+  box-shadow: 0px 47px 57px -26px rgba(83, 83, 144, 0.14);
+}
+
+.group{
+    /* text-align: center; */
+    margin-bottom: 56px;
+}
+
+.group > h1{
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.group > p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.group-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.group-main .main-item{
+    background-color: #FFFBEC;
+    width: 285px;
+    height: 326px;
+    border-radius: 14px;
+}
+
+.group-main .item-2{
+    background-color: #F9ECFF;
+}
+.group-main .item-3{
+    background-color: #ECEEFF;
+}
+
+.item-content{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 24px;
+    left: 24px;
+}
+
+.item-content .content{
+    width: 285px;
+    /* height: 246px; */
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 40px;
+}
+
+.content .content-box1{
+    margin-bottom: 16px;
+}
+.content-ice h6{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.content-ice p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.month{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.month .month-1{
+    font-size: 24px;
+    font-weight: 700;
+}
+.button-add button{
+    width: 100%;
+    padding: 16px 24px;
+}
+
