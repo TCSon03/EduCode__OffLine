@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: grid;
+            grid-template-areas:
+            "header header header"
+            "sidebar main main"
+            "footer footer footer";
+        }
+        header{
+            background-color: antiquewhite;
+            grid-area: header;
+        }
+        .sidebar{
+            background-color: aqua;
+            grid-area: sidebar;
+        }
+        main{
+            background-color: aquamarine;
+            grid-area: main;
+        }
+        footer{
+            background-color: beige;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <div class="sidebar">sidebar</div>
+    <main>
+        <h1>Danh sach sản phẩm</h1>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>

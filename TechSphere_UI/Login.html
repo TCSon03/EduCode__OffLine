@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register UI</title>
+    <title>Login UI</title>
     <!--Icon remix -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- Link Font Poppins -->
@@ -59,31 +59,21 @@
     </div>
     <hr>
 
-    <!-- Register -->
-    <section class="container register">
+    <!-- Login -->
+    <section class="container register login">
         <img src="image/Side-register.svg" alt="">
         <form>
-            <h2>Create an account</h2>
+            <h2>Log in to Exclusive</h2>
             <p>Enter your details below</p>
             <div class="group-form">
-                <!-- <div class="form-group-input"> -->
-                    <input type="text" placeholder="Name">
-                <!-- </div> -->
-                <!-- <div class="form-group-input"> -->
-                    <input type="text" placeholder="Email or Phone Number">
-                <!-- </div> -->
-                <!-- <div class="form-group-input"> -->
-                    <input type="text" placeholder="Password">
-                <!-- </div> -->
+                    <input type="email" placeholder="Email or Phone Number">
+                    <input type="password" placeholder="Password">
             </div>
-            <button class="create-account">Create Account</button>
-            <button class="sign-google">
-                <div class="sign-google-img">
-                    <img src="image/Icon-Google.svg" alt="">
-                </div>
-                <span>Sign up with Google</span>
-            </button>
-            <p class="a-account">Already have account? <a href="Login.html">Log In</a></p>
+            <div class="login-button">
+                <button class="create-account">Log In</button>
+                <a href="">Forget Password?</a>
+            </div>
+            <p class="a-account">Already have account? <a href="Register.html">Sign In</a></p>
         </form>
     </section>
 

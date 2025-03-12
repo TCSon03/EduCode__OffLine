@@ -61,13 +61,37 @@ form > .group-form > input{
     font-size: 1rem;
     font-weight: 500;
 }
-.register > form > p{
+.register > form > .a-account{
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
     opacity: 0.7;
 }
-.register > form > p > a{
+.register > form > .a-account > a{
     text-decoration: underline;
 }
 
+
+/* login */
+
+.login > form > .login-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.login > form > .login-button > button{
+    padding: 16px 48px;
+    background-color: #DB4444;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+
+}
+.login > form > .login-button > a{
+    color: #DB4444;
+    font-size: 1rem;
+    font-weight: 500;
+}
