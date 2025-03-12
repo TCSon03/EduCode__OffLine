@@ -1,0 +1,26 @@
+:root {
+    /* font-color */
+    --font-color-black: #000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+  }
