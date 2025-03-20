@@ -15,14 +15,15 @@
          * Output: In ra 2 số sau khi hoán vị;
          * Logic: Hoán vị 2 số không dùng biến trung gian
         */
-
+        let a = parseFloat(prompt("Nhap so a"));
+        let b = parseFloat(prompt("Nhap so b"));
         function swapNumber(a, b) {
             a = a + b;
             b = a - b;
             a = a - b;
             return [a, b]
         }
-        console.log(swapNumber(3, 5))
+        console.log(swapNumber(a, b))
     </script>
 </body>
 
