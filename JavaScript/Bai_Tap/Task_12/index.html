@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task 12: Viết hàm in ra số chính phương từ 2 - n</h1>
+    <script>
+        /**
+         * input: cho một số n;
+         * output: in ra số chính phương từ 2 đến n
+         * logic: hàm printSquareNumber(n) để in ra các số chính phương từ 2 đến n.
+        */
+        function printSquareNumber(n) {
+            for (let i = 2; i * i <= n; i++) {
+                console.log(i * i + " là số chính phương của " + i)
+            }
+        }
+        printSquareNumber(10);
+        printSquareNumber(20);
+    </script>
+</body>
+
+</html>

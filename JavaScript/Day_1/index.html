@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS</title>
 </head>
+
 <body>
-    
+    <h1>
+        Trả về BMI
+    </h1>
+    <script>
+        // Bai 1:
+        // let weight = 19;
+        // let height = 1.79;
+        // let calc = 24
+        // if (calc < 18.5) {
+        //     console.log(calc + " Thiếu cân")
+        // } else if (calc < 23) {
+        //     console.log(calc + " Bình thường")
+        // } else if (calc < 25) {
+        //     console.log(calc + " Thừa cân")
+        // } else {
+        //     console.log(calc + " Béo phì")
+        // }
+
+        // let weight = parseFloat(prompt("Moi nhap can nang"))
+        // let height = parseFloat(prompt("Moi nhap chieu cao"))
+        // function calcMBI(weight, height) {
+        //     let calc = (weight / height ** 2).toFixed(2);
+        //     switch (true) {
+        //         case (calc < 18.5):
+        //             console.log(calc + " thieu cân")
+        //             break;
+        //         case (calc < 23):
+        //             console.log(calc + " binh thuong")
+        //             break;
+        //         case (calc < 25):
+        //             console.log(calc + " thua can")
+        //             break;
+        //         case (calc >= 25):
+        //             console.log(calc + " Beo phi")
+        //             break;
+        //         default:
+        //             console.log(calc + " Khong biet")
+        //             break;
+        //     }
+        //     // let calc = +(weight / height ** 2).toFixed(2);
+        //     // if (calc < 18.5) {
+        //     //     console.log(calc + " Thiếu cân")
+        //     // } else if (calc < 23) {
+        //     //     console.log(calc + " Đẹp")
+        //     // } else if (calc < 25) {
+        //     //     console.log(calc + " Thừa cân")
+        //     // } else {
+        //     //     console.log(calc + " Béo phì")
+        //     // }
+        // }
+        // calcMBI(weight, height)
+
+        // Bai 2
+        // let a = parseFloat(prompt("Nhap so a"));
+        // let b = parseFloat(prompt("Nhap so b"));
+
+        // function swapNumber(a, b) {
+        //     a = a + b;
+        //     b = a - b;
+        //     a = a - b;
+        //     return [a, b]
+        // }
+        // console.log(swapNumber(a, b));
+
+        // Bai 3:
+        /**
+         * input: number;
+         * output: boolean;
+         * logic: kiểm tra number chỉ chia hết cho 1 và chính nó
+        */
+        function checkPrimeNumber(number) {
+            for (let i = 2; i < number; i++) {
+                // console.log(i);
+                if (number % i === 0) return false;
+                return true
+            }
+        }
+        console.log(checkPrimeNumber(13))
+        console.log(checkPrimeNumber(6))
+        console.log(checkPrimeNumber(18))
+        console.log(checkPrimeNumber(2))
+    </script>
 </body>
+
 </html>

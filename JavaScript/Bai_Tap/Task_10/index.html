@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task 10: Viết hàm thực hiện đổ chỗ 3 số thành thứ tự tăng dần</h1>
+    <script>
+        /**
+         * Input: Cho trước 3 số a, b, c
+         * Output: In 3 số có thứ tự tăng dần
+         * Logic: Thực hiện đổi chỗ 3 số a, b, c sao cho 3 số có thứ tự tăng dần nhưng không được dùng phương thức sort() của mảng, cũng không được dùng biến trung gian.
+        */
+
+        function sortNumber(a, b, c) {
+            if (a > b) {
+                a = a + b;
+                b = a - b;
+                a = a - b;
+            }
+            if (b > c) {
+                b = b + c;
+                c = b - c;
+                b = b - c
+            }
+            if (a > b){
+                a = a + b;
+                b = a-b;
+                a = a-b
+            }
+            return [a, b, c]
+        }
+        console.log(sortNumber(12, 9, 7))
+    </script>
+</body>
+
+</html>

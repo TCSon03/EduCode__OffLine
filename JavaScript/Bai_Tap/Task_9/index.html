@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task 09: Viết hàm thực hiện hoán vị 2 số không dùng biến trung gian</h1>
+    <script>
+        /**
+         * Input: Cho trước 2 số a, b
+         * Output: In ra 2 số sau khi hoán vị;
+         * Logic: Hoán vị 2 số không dùng biến trung gian
+        */
+
+        function swapNumber(a, b) {
+            a = a + b;
+            b = a - b;
+            a = a - b;
+            return [a, b]
+        }
+        console.log(swapNumber(3, 5))
+    </script>
+</body>
+
+</html>
