@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task 08: Viết hàm tính và đưa ra gợi ý sức khoẻ trên cơ sở chỉ số BMI</h1>
+
+    <script>
+        /**
+         * input: Nhập cân nặng và chiều cao;
+         * output: In ra Thiếu cân hoặc Bình thường hoặc Thừa cân hoặc Béo phì;
+         * logic: BMI < 18.5: Thiếu cân
+                    18.5 <= BMI < 23: Bình thường
+                    23 <= BMI < 25: Thừa cân
+                    BMI >= 25: Béo phì
+                    Với công thức: BMI = weight / height^2
+        */
+        let weight = parseFloat(prompt("Moi nhap can nang"))
+        let height = parseFloat(prompt("Moi nhap chieu cao"))
+        function calcMBI(weight, height) {
+            // let calc = (weight / height ** 2).toFixed(2);
+            // switch (true) {
+            //     case (calc < 18.5):
+            //         console.log(calc + " thieu cân")
+            //         break;
+            //     case (calc < 23):
+            //         console.log(calc + " binh thuong")
+            //         break;
+            //     case (calc < 25):
+            //         console.log(calc + " thua can")
+            //         break;
+            //     case (calc >= 25):
+            //         console.log(calc + " Beo phi")
+            //         break;
+            //     default:
+            //         console.log(calc + " Khong biet")
+            //         break;
+            // }
+            let calc = (weight / height ** 2).toFixed(2);
+            if (calc < 18.5) {
+                console.log(calc + " Thiếu cân")
+            } else if (calc < 23) {
+                console.log(calc + " Đẹp")
+            } else if (calc < 25) {
+                console.log(calc + " Thừa cân")
+            } else {
+                console.log(calc + " Béo phì")
+            }
+        }
+        calcMBI(weight, height)
+    </script>
+</body>
+
+</html>
