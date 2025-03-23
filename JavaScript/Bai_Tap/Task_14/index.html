@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task 14: Tìm số lớn nhất trong 3 số</h1>
+    <script>
+        /**
+         * input: nhap 3 so a,b,c;
+         * output: in ra so lon nhat;
+         * logic: Tìm số lớn nhất rồi in ra màn hình
+        */
+        let a = Number(prompt('Nhap so a'))
+        let b = Number(prompt('Nhap so b'))
+        let c = Number(prompt('Nhap so c'))
+        function findMaxNumber(a, b, c) {
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                document.write("Cần nhập số");
+                return;
+            }
+            if(a == b && b == c){
+                document.write("3 số bằng nhau");
+                return;
+            }
+            let max = a;
+            if (max < b) {
+                max = b
+            }
+            if (max < c) {
+                max = c;
+            }
+            document.write(max + ' Là số lớn nhất trong 3 số!')
+        }
+        findMaxNumber(a, b, c)
+    </script>
+</body>
+
+</html>

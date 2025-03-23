@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task 16: Tính tiền taxi</h1>
+    <script>
+        /**
+         * input: Nhap so KM;
+         * output: In so tien cần trả;
+         * logic:   Số km <= 1 giá: 10000đ/km. (giá mở cửa 10.000đ)
+                    Số km > 1 đến <= 30 giá: 8000đ/km.
+                    Số km từ > 30 giá: 7000đ/km.
+                    Nếu số km nhập vào không hợp lệ thì thông báo "Số km không hợp lệ".
+        */
+        let km = parseFloat(prompt("Nhập số KM?"))
+        function taxiBill(km) {
+            if (isNaN(km) || km <= 0) {
+                document.write("Số KM không hợp lệ");
+                return;
+            }
+            if (km <= 1) {
+                document.write("Số tiền cần trả: 10000đ");
+                return;
+            } else if (km < 30) {
+                document.write(`Số KM là ${km} số tiền phải trả là: ${km * 8000}đ`);
+                return;
+            } else {
+                document.write(`Số KM là ${km} số tiền phải trả là: ${km * 7000}đ`);
+                return;
+            }
+        }
+        taxiBill(km)
+    </script>
+</body>
+
+</html>

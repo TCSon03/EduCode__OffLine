@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task 17: Tính tiền thuế</h1>
+    <script>
+        /**
+         * input: Nhap so Salary;
+         * output: In so tien thue;
+         * logic:   Khoản thu nhập <= 11 triệu: Không tính thuế.
+                    Khoản thu nhập từ trên 11 triệu đến 25 triệu: 5% thuế.
+                    Khoản thu nhập từ trên 25 triệu đến 50 triệu: 10% thuế.
+                    Khoản thu nhập từ trên 50 triệu đến 80 triệu: 20% thuế.
+                    Khoản thu nhập từ trên 80 triệu: 30% thuế.
+                    Nếu thu nhập nhập vào không hợp lệ thì thông báo "Thu nhập không hợp lệ".
+        */
+        let salary = parseFloat(prompt("Nhập số tiền lương của bạn!"))
+        function taxSalary(salary) {
+            if (isNaN(salary) || salary <= 0) {
+                document.write("Số tiền bạn nhập không hợp lệ");
+                return;
+            }
+            if (salary <= 11000000) {
+                document.write(`Số tiền ${salary}đ không cần tình thuế`);
+                return;
+            } else if (salary <= 25000000) {
+                document.write(`Tiền thuế của ${salary}đ là ${salary * (5 / 100)}đ`)
+            } else if (salary <= 50000000) {
+                document.write(`Tiền thuế của ${salary}đ là ${salary * (10 / 100)}đ`)
+            } else if (salary <= 80000000) {
+                document.write(`Tiền thuế của ${salary}đ là ${salary * (30 / 100)}đ`)
+            }
+        }
+        taxSalary(salary)
+
+    </script>
+</body>
+
+</html>
