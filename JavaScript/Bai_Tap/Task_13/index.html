@@ -9,31 +9,35 @@
 
 <body>
     <h1>Task 13: Viết hàm in ra các số nguyên tố từ 2 - n</h1>
+
     <script>
         /**
          * input: nhap so;
          * output: in ra so nguyen;
          * logic: in ra các số nguyên tố từ 2 đến n
         */
-        // let n = parseInt(prompt("Nhap so nguyen n"));
-        // function printPrimeNumber(n) {
-        //     let result = "";
-        //     for (let i = 1; i <= n; i++) {
-        //         result += i + "";
-        //     }
-        //     return result;
-
-        // }
-
-        // document.write(printPrimeNumber(n));
-        let n = Number(prompt("Nhap so nguyen n"));
-        function printPrimeNumber(n) {
-            if (n < 2) document.write` ${n} Khong phai so nguyen to`
-            for (let i = 2; i <= n; i++) {
-                document.write(i);
+        let n = parseInt(prompt("Nhap so nguyen to"));
+        function print(n) {
+            if (isNaN(n) || n < 2) {
+                document.write("Nhap so nguyen to");
+                return;
+            }
+            for (let i = 2; i < n; i++) {
+                let isPrice = true;
+                for (let j = 2; j < i; j++) {
+                    if (i % j === 0) {
+                        isPrice = false;
+                        break;
+                    }
+                    isPrice = true;
+                }
+                if (isPrice) {
+                    document.write(i);
+                }
             }
         }
-        printPrimeNumber(n);
+        print(n)
+
     </script>
 </body>
 

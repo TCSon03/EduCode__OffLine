@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task 15: Kiểm tra số cùng dấu</h1>
+    <script>
+        /**
+         * input: nhap 2 số bất kì;
+         * output: 2 số cùng dấu hay không;
+         * logic: Kiểm tra 2 số cùng dấu hay không và hiển thị kết quả ra màn hình
+        */
+        let a = Number(prompt('Nhap so a'))
+        let b = Number(prompt('Nhap so b'))
+        function isSameSign(a, b) {
+            if (isNaN(a) || isNaN(b)) {
+                document.write("Bạn cần nhập số");
+                return;
+            } else if (a >= 0 && b >= 0) {
+                document.write(`${a} , ${b} True`);
+                return;
+            } else if (a <= 0 && b <= 0) {
+                document.write(`${a} , ${b} True`);
+                return;
+            } else{
+                document.write(`${a} , ${b} False`);
+                return;
+            }
+        }
+        isSameSign(a, b)
+    </script>
+</body>
+
+</html>
