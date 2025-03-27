@@ -27,11 +27,11 @@
             if (km <= 1) {
                 document.write("Số tiền cần trả: 10000đ");
                 return;
-            } else if (km < 30) {
+            } else if (km <= 30) {
                 document.write(`Số KM là ${km} số tiền phải trả là: ${((km - 1) * 8000) + 10000}đ`);
                 return;
             } else {
-                document.write(`Số KM là ${km} số tiền phải trả là: ${((km - 1) * 7000) + 10000}đ`);
+                document.write(`Số KM là ${km} số tiền phải trả là: ${10000 + (29 * 8000) + ((km - 30) * 7000)}đ`);
                 return;
             }
         }
