@@ -30,11 +30,13 @@
                 document.write(`Số tiền ${salary}đ không cần tình thuế`);
                 return;
             } else if (salary <= 25000000) {
-                document.write(`Tiền thuế của ${salary}đ là ${salary * (5 / 100)}đ`)
+                document.write(`Tiền thuế của ${salary}đ là ${(salary - 11000000) * 0.05}đ`)
             } else if (salary <= 50000000) {
-                document.write(`Tiền thuế của ${salary}đ là ${salary * (10 / 100)}đ`)
+                document.write(`Tiền thuế của ${salary}đ là ${(11000000 * 0) + (14000000 * 0.05) + (salary - 25000000) * 0.1}đ`)
             } else if (salary <= 80000000) {
-                document.write(`Tiền thuế của ${salary}đ là ${salary * (30 / 100)}đ`)
+                document.write(`Tiền thuế của ${salary}đ là ${(11000000 * 0) + (14000000 * 0.05) + (25000000 * 0.1) + (salary - 50000000) * 0.2}đ`)
+            } else {
+                document.write(`Tiền thuế của ${salary}đ là ${(11000000 * 0) + (14000000 * 0.05) + (25000000 * 0.1) + (30000000 * 0.2) + (salary - 80000000) * 0.3}đ`)
             }
         }
         taxSalary(salary)
