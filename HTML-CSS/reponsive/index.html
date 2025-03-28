@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Test</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset mặc định */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: clamp(14px, 2vw, 20px);
+            /* Chữ co giãn mượt */
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: clamp(18px, 3vw, 30px);
+        }
+
+        /* Layout linh hoạt */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 300px;
+            /* Responsive tự động */
+            max-width: 400px;
+        }
+
+        /* Responsive với Media Query */
+        @media (max-width: 1024px) {
+            body {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .item {
+                max-width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            header {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Website Responsive</h1>
+    </header>
+
+    <section class="container">
+        <div class="item">Box 1</div>
+        <div class="item">Box 2</div>
+        <div class="item">Box 3</div>
+    </section>
+
+</body>
+
+</html>

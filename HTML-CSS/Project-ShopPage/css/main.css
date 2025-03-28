@@ -1,12 +1,69 @@
-h1 {
-  color: blue;
-  font-size: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header {
-  color: aqua;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.header {
-  font-size: 50px;
+li {
+  list-style-type: none;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header a p {
+  margin: 0;
+}
+header a p:nth-child(1) {
+  font-weight: 700;
+  color: #fff;
+  padding: 4px 8px;
+  background-color: #ff7b29;
+  border-radius: 50%;
+}
+header a p:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+header a p:nth-child(2) span {
+  color: #ff7b29;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin: 0;
+}
+header ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #676a6c;
+}
+header ul li:nth-child(1) a {
+  color: #000;
+}
+header .nav-icon {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -9,51 +9,15 @@
 
 <body>
     <h1>Bài tập về for</h1>
-    <table border="1">
-        <tbody>
-            <tr>
-                <td><input type="text" id="number" placeholder="Nhap so > 1"></td>
-                <td>
-                    <p class="n"></p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+
     <script>
-        // bai 1: in ra các số từ 1 đến 20
-        // let inputNumber = document.getElementById('number');
-        // let output = document.querySelector('.n')
-        // function printNumbers() {
-        //     let n = parseInt(inputNumber.value);
-        //     if (isNaN(n) || n <= 1) {
-        //         output.innerHTML = "Vui long nhap so lon hon 1";
-        //         return
-        //     }
-        //     output.innerText = "";
-        //     for (let i = i; i <= n; i++) {
-        //         output.innerText += i + " "
-        //     }
-        // }
-        // inputNumber.addEventListener("input", printNumbers)
-        let inputNumber = document.getElementById('number');
-        let output = document.querySelector('.n');
+        if (true) {
+            let a = 10;
+            var b = 20;
 
-        function printNumbers() {
-            let n = parseInt(inputNumber.value); // Lấy số nhập vào và chuyển thành số nguyên
-            if (isNaN(n) || n <= 1) { // Kiểm tra nếu không phải số hoặc nhỏ hơn 1
-                output.innerText = "Vui lòng nhập số lớn hơn 1";
-                return;
-            }
-
-            output.innerText = ""; // Xóa kết quả cũ
-            for (let i = 1; i <= n; i++) {
-                output.innerText += i + " ";
-            }
         }
-
-        // Gọi hàm khi người dùng nhập xong số
-        inputNumber.addEventListener('input', printNumbers);
-
+        console.log(a)
+        console.log(b)
     </script>
 </body>
 
