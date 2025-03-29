@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
   h3 {
     font-size: clamp(24px, 3vw, 40px);
     font-weight: 700;
@@ -17,9 +18,9 @@
     transition: all 0.3s ease;
     color: #fff;
     &:hover {
-        outline: 2px solid #ff7b29;
-        background-color: #fff;
-        color: #ff7b29;
+      outline: 2px solid #ff7b29;
+      background-color: #fff;
+      color: #ff7b29;
     }
   }
 }

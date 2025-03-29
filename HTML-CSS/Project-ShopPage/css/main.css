@@ -172,33 +172,6 @@ header .menu button:hover {
 .banner-main {
   padding-top: 40px;
 }
-.banner-main .banner-image {
-  background-color: #a19b9b;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.banner-image button {
-  border: none;
-  background: none;
-}
-.banner-image button i {
-  color: #fff;
-  font-size: 40px;
-  font-weight: 800;
-  transition: color 0.5s ease-in-out;
-}
-.banner-image button i:hover {
-  color: #ff7b29;
-}
-.banner-image a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 @media screen and (max-width: 992px) {
   .banner .row .banner-category {
@@ -208,10 +181,84 @@ header .menu button:hover {
     width: 100%;
   }
 }
+.banner-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ebcfcf;
+  border-radius: 12px;
+}
+.banner-slider .banner-slides {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+.banner-slider .banner-slides .slide {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 40px 0;
+}
+.banner-slider .banner-slides .slide.active {
+  opacity: 1;
+}
+.banner-slider .banner-slides .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.banner-slider .slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.banner-slider .slider-btn:hover {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.banner-slider .slider-btn.prev {
+  left: 20px;
+}
+.banner-slider .slider-btn.next {
+  right: 20px;
+}
+.banner-slider .slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.banner-slider .slider-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.banner-slider .slider-dots .dot.active {
+  background: #fff;
+  transform: scale(1.2);
+}
+
 .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 .title h3 {
   font-size: clamp(24px, 3vw, 40px);
@@ -232,6 +279,30 @@ header .menu button:hover {
   outline: 2px solid #ff7b29;
   background-color: #fff;
   color: #ff7b29;
+}
+
+.products {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 992px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
