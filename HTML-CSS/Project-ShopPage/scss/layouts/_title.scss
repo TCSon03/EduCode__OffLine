@@ -1,0 +1,25 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    font-size: clamp(24px, 3vw, 40px);
+    font-weight: 700;
+    color: #2d3134;
+    margin: 0;
+  }
+  a {
+    padding: clamp(10px, 2vw, 20px) clamp(20px, 3vw, 32px);
+    border-radius: 12px;
+    background-color: #ff7b29;
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #fff;
+    &:hover {
+        outline: 2px solid #ff7b29;
+        background-color: #fff;
+        color: #ff7b29;
+    }
+  }
+}

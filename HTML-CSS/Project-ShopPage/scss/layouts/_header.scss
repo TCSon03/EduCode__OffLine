@@ -1,5 +1,6 @@
 .container {
   header {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,6 +8,7 @@
 }
 
 header {
+  margin-bottom: 16px;
   a {
     display: flex;
     align-items: center;
@@ -40,6 +42,24 @@ header {
         font-size: 14px;
         font-weight: 500;
         color: #676a6c;
+        position: relative;
+        transition: color 0.5s ease-in-out;
+      }
+      a::after{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #ff7b29;
+        bottom: -3px;
+        transition: width 0.5s ease-in-out;
+      }
+      a:hover{
+        color: #000;
+      }
+      a:hover::after{
+        width: 100%;
       }
     }
     li:nth-child(1) {
@@ -48,9 +68,42 @@ header {
       }
     }
   }
-  .nav-icon{
+  .nav-icon {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+    a {
+      font-size: 24px;
+      transition: color 0.5s ease-in-out;
+    }
+    a:hover{
+      color: #ff7b29;
+    }
+  }
+  .menu {
+    display: none;
+    button {
+      border: none;
+      background: none;
+      font-size: 24px;
+      font-weight: 700;
+      transition: color 0.5s ease-in-out;
+    }
+    button:hover {
+      color: #ff7b29;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  header {
+    ul {
+      display: none;
+    }
+    .nav-icon {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
   }
 }
